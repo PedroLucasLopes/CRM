@@ -14,5 +14,12 @@ export default {
       },
     },
   },
+  variants: {
+    extend: {
+      backgroundColor: ["disabled"],
+      borderColor: ["focus", "disabled"],
+      outline: ["focus"],
+    },
+  },
   plugins: [],
 };

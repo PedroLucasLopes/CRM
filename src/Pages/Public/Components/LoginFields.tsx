@@ -1,15 +1,17 @@
 import React from "react";
-import Input from "../../../Components/input";
+import MidTitle from "../../../Components/MidTitle";
+import Input from "../../../Components/InputForm";
+import Button from "../../../Components/Button";
 
 const LoginFields: React.FC<TState> = ({ setState }) => {
   return (
     <div className="flex flex-col items-center">
-      <p className="text-3xl mb-5">login</p>
+      <MidTitle>Login</MidTitle>
       <div>
         <Input label="Email ou Usuário" type="text" onChange={() => {}} />
         <Input label="Senha" type="password" onChange={() => {}} />
       </div>
-      <div className="w-72 flex justify-between">
+      <div className="w-72 flex justify-between mb-10">
         <button className="opacity-60" onClick={() => setState("password")}>
           Esqueci minha senha
         </button>
@@ -17,6 +19,7 @@ const LoginFields: React.FC<TState> = ({ setState }) => {
           Cadastrar
         </button>
       </div>
+      <Button onClick={() => {}}>Entrar</Button>
     </div>
   );
 };

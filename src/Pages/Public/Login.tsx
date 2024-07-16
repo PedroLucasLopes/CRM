@@ -1,6 +1,5 @@
 import { ReactNode, useState } from "react";
-import LoginAsset from "../../assets/login";
-import CrmLogo from "../../assets/crmlogo";
+import LoginAsset from "../../assets/LoginAsset";
 import LoginFields from "./Components/LoginFields";
 import SignUpFields from "./Components/SignUpFields";
 import PasswordFields from "./Components/PasswordFields";
@@ -14,7 +13,7 @@ const Login = () => {
     [key in "login" | "password" | "signup"]: ReactNode;
   } = {
     login: <LoginFields setState={setChangePage} />,
-    password: <PasswordFields />,
+    password: <PasswordFields setState={setChangePage} />,
     signup: <SignUpFields setState={setChangePage} />,
   };
 
@@ -24,7 +23,6 @@ const Login = () => {
         <div className="flex">
           <div className="w-1/3 h-full m-auto">
             {pageComponents[changePage]}
-            <CrmLogo />
           </div>
           <div className="w-2/3">
             <LoginAsset />

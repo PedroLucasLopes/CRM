@@ -5,7 +5,7 @@ const CrmLogo = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 500.000000 500.000000"
       preserveAspectRatio="xMidYMid meet"
-      className="xl:w-60 md:w-52 sm:w-44 m-auto text-center"
+      className="xl:w-52 md:w-44 sm:w-36 m-auto text-center"
     >
       <g
         transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"

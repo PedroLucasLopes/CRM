@@ -35,3 +35,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+@layer components {
+  .primary {
+    @apply w-full h-full bg-transparent text-slate-900 font-mono outline outline-0 transition-all border text-sm px-3 py-2.5 rounded-[7px]
+  }
+  .primary:focus {
+    @apply outline-0 border-2 border-midorange
+  }
+}
