@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Rubik, Inter, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -17,9 +17,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
+@font-face {
+  font-family: "PoiretOneRegular";
+  src: local("PoiretOneRegular"),
+    url("./fonts/PoiretOneRegular/PoiretOne-Regular.ttf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"),
+    url("./fonts/Rubik/Rubik-VariableFont_wght.ttf") format("opentype");
+}
+
+* {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }

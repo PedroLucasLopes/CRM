@@ -1,13 +1,13 @@
-import React from "react";
-
 const LoginAsset = () => {
   return (
     <svg
       version="1.1"
       viewBox="0 0 2048 1365"
-      width="1280"
-      height="1280"
+      width="auto"
+      height="auto"
+      preserveAspectRatio="xMidYMid meet"
       xmlns="http://www.w3.org/2000/svg"
+      className="rounded-r-lg h-full"
     >
       <path transform="translate(0)" d="m0 0h2048v1365h-2048z" fill="#202020" />
       <path
