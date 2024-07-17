@@ -6,9 +6,17 @@ import BackArrow from "../../../assets/backarrow";
 
 const PasswordFields: React.FC<TState> = ({ setState }) => {
   return (
-    <div className="flex flex-col items-center">
-      <MidTitle>Recuperar Senha</MidTitle>
-      <div className="mb-8">
+    <div className="flex flex-col justify-center items-center">
+      <div className="flex items-center relative">
+        <button
+          className="bg-transparent absolute -left-10"
+          onClick={() => setState("login")}
+        >
+          <BackArrow />
+        </button>
+        <MidTitle>Recuperar Senha</MidTitle>
+      </div>
+      <div className="mb-8 pt-5 sm:w-80 md:w-auto">
         <Input label="Email" type="text" onChange={() => {}} />
         <Input label="Nova Senha" type="password" onChange={() => {}} />
         <Input
@@ -17,15 +25,7 @@ const PasswordFields: React.FC<TState> = ({ setState }) => {
           onChange={() => {}}
         />
       </div>
-      <div className="flex flex-col items-center relative">
-        <Button onClick={() => {}}>Criar Conta</Button>
-        <button
-          className="bg-transparent pt-5"
-          onClick={() => setState("login")}
-        >
-          <BackArrow />
-        </button>
-      </div>
+      <Button onClick={() => {}}>Recuperar Senha</Button>
     </div>
   );
 };

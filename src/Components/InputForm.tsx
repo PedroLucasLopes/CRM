@@ -1,7 +1,7 @@
 import React from "react";
 
 const InputForm: React.FC<TInput> = (
-  { type = "text", style = "primary", placeholder, label, value, onChange },
+  { type = "text", pattern = "primary", placeholder, label, value, onChange },
   props
 ) => {
   return (
@@ -12,7 +12,7 @@ const InputForm: React.FC<TInput> = (
         value={value}
         placeholder={placeholder}
         onChange={onChange}
-        className={style}
+        className={`${pattern} sm:bg-white`}
         autocomplete="off"
         {...props}
       />

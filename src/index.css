@@ -17,19 +17,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: "PoiretOneRegular";
-  src: local("PoiretOneRegular"),
-    url("./fonts/PoiretOneRegular/PoiretOne-Regular.ttf") format("opentype");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Rubik";
-  src: local("Rubik"),
-    url("./fonts/Rubik/Rubik-VariableFont_wght.ttf") format("opentype");
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -43,4 +30,26 @@
   .primary:focus {
     @apply outline-0 border-2 border-midorange
   }
+  .flex-col-items {
+    @apply flex flex-col items-center
+  }
+  .mid-opaticy-menu-button {
+    @apply sm:opacity-100 md:opacity-60 sm:text-midorange md:text-zinc-900
+  }
+  .mid-opaticy-menu-button:hover {
+    @apply md:transition-all md:text-midorange md:opacity-100
+  }
+}
+
+@font-face {
+  font-family: "PoiretOneRegular";
+  src: local("PoiretOneRegular"),
+    url("./fonts/PoiretOneRegular/PoiretOne-Regular.ttf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"),
+    url("./fonts/Rubik/Rubik-VariableFont_wght.ttf") format("opentype");
 }

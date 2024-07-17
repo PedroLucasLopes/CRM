@@ -1,13 +1,11 @@
-const LoginAsset = () => {
-  return (
-    <svg
+<svg
       version="1.1"
       viewBox="0 0 2048 1365"
-      width="100%"
-      height="100%"
-      preserveAspectRatio="none"
+      width="auto"
+      height="auto"
+      preserveAspectRatio="xMidYMid meet"
       xmlns="http://www.w3.org/2000/svg"
-      className="rounded-r-lg"
+      className="rounded-r-lg h-full"
     >
       <path transform="translate(0)" d="m0 0h2048v1365h-2048z" fill="#202020" />
       <path
@@ -637,8 +635,4 @@ const LoginAsset = () => {
         d="m0 0 7 6 9 9-12 12-4 2z"
         fill="#4551E5"
       />
-    </svg>
-  );
-};
-
-export default LoginAsset;
+</svg>

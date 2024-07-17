@@ -5,7 +5,7 @@ interface IProps {
 }
 
 const MidTitle: React.FC<IProps> = ({ children }) => {
-  return <p className="text-3xl mb-5">{children}</p>;
+  return <p className="text-3xl sm:w-80 md:w-full text-center">{children}</p>;
 };
 
 export default MidTitle;

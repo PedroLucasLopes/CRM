@@ -18,13 +18,13 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="xl:w-128 xl:h-128 sm:w-auto sm:h-auto rounded-lg bg-white shadow-lg">
-        <div className="flex">
-          <div className="w-1/3 h-full m-auto">
+    <div className="min-h-screen flex items-center justify-center sm:bg-loginImage md:bg-none">
+      <div className="max-w-screen-2xl max-h-screen sm:p-5 md:p-0 sm:w-full sm:ml-10 sm:mr-10 sm:h-auto xl:w-128 xl:h-128 rounded-lg sm:bg-offwhite md:bg-white shadow-lg">
+        <div className="flex h-full">
+          <div className="sm:m-auto md:w-1/2 md:p-5 xl:w-1/3 md:flex md:justify-center md:items-center">
             {pageComponents[changePage]}
           </div>
-          <div className="w-2/3">
+          <div className="sm:hidden md:block md:w-1/2 xl:w-2/3 h-auto">
             <LoginAsset />
           </div>
         </div>

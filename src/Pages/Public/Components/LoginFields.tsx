@@ -5,17 +5,23 @@ import Button from "../../../Components/Button";
 
 const LoginFields: React.FC<TState> = ({ setState }) => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex-col-items">
       <MidTitle>Login</MidTitle>
-      <div>
+      <div className="sm:w-80 md:w-auto xl:w-auto 2xl:w-auto">
         <Input label="Email ou Usuário" type="text" onChange={() => {}} />
         <Input label="Senha" type="password" onChange={() => {}} />
       </div>
       <div className="w-72 flex justify-between mb-10">
-        <button className="opacity-60" onClick={() => setState("password")}>
+        <button
+          className="mid-opaticy-menu-button"
+          onClick={() => setState("password")}
+        >
           Esqueci minha senha
         </button>
-        <button className="opacity-60" onClick={() => setState("signup")}>
+        <button
+          className="mid-opaticy-menu-button"
+          onClick={() => setState("signup")}
+        >
           Cadastrar
         </button>
       </div>

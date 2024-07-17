@@ -12,6 +12,16 @@ export default {
       borderColor: {
         midorange: "#DB4A2B",
       },
+      textColor: {
+        midorange: "#DB4A2B",
+      },
+      backgroundImage: {
+        loginImage: "url('./src/assets/loginasset.svg')",
+      },
+      backgroundColor: {
+        offwhite: "#F5F5F5",
+        blanchedalmond: "#ffebcd",
+      },
     },
   },
   variants: {
