@@ -13,7 +13,7 @@ const InputForm: React.FC<TInput> = (
         placeholder={placeholder}
         onChange={onChange}
         className={`${pattern} sm:bg-white`}
-        autocomplete="off"
+        autoComplete="off"
         {...props}
       />
     </div>
