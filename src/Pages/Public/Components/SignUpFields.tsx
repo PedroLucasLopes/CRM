@@ -6,7 +6,7 @@ import BackArrow from "../../../assets/backarrow";
 
 const SignUpFields: React.FC<TState> = ({ setState }) => {
   return (
-    <div className="flex-col-items mr-5 ml-5">
+    <div className="flex-col-items mr-5 ml-5 animate-moveContainerLeft">
       <div className="flex items-center relative">
         <button
           className="bg-transparent absolute -left-10"
@@ -16,7 +16,7 @@ const SignUpFields: React.FC<TState> = ({ setState }) => {
         </button>
         <MidTitle>Criar Conta</MidTitle>
       </div>
-      <div className="mb-8 sm:w-80 md:w-auto">
+      <div className="mb-8 pt-5 sm:w-80 md:w-auto">
         <Input label="Nome Completo" type="text" onChange={() => {}} />
         <Input label="Email" type="email" onChange={() => {}} />
         <div className="flex justify-between items-center gap-2">

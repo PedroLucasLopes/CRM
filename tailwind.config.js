@@ -22,6 +22,12 @@ export default {
         offwhite: "#F5F5F5",
         blanchedalmond: "#ffebcd",
       },
+      animation: {
+        changeOpacity: "changeOpacity .5s ease-in-out",
+        moveContainerRight: "moveContainerRight 1s ease-out",
+        moveContainerLeft: "moveContainerLeft .7s ease-out",
+        moveContainerUp: "moveContainerUp 1.5s ease-out",
+      },
     },
   },
   variants: {

@@ -6,7 +6,7 @@ import BackArrow from "../../../assets/backarrow";
 
 const PasswordFields: React.FC<TState> = ({ setState }) => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center animate-moveContainerLeft">
       <div className="flex items-center relative">
         <button
           className="bg-transparent absolute -left-10"

@@ -5,7 +5,7 @@ import Button from "../../../Components/Button";
 
 const LoginFields: React.FC<TState> = ({ setState }) => {
   return (
-    <div className="flex-col-items">
+    <div className="flex-col-items animate-moveContainerRight">
       <MidTitle>Login</MidTitle>
       <div className="sm:w-80 md:w-auto xl:w-auto 2xl:w-auto">
         <Input label="Email ou Usuário" type="text" onChange={() => {}} />

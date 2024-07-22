@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: #242424;
-  background-color:blanchedalmond;
+  background-color:#ffebcd;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -38,6 +38,44 @@
   }
   .mid-opaticy-menu-button:hover {
     @apply md:transition-all md:text-midorange md:opacity-100
+  }
+}
+
+@keyframes changeOpacity {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveContainerRight {
+  from {
+    opacity: 0;
+    transform: translate3d(30px, 0, 0)
+  } to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes moveContainerLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0)
+  } to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes moveContainerUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 150px, 0)
+  } to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 
