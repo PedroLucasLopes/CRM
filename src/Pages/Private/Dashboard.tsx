@@ -1,7 +1,18 @@
-import React from "react";
+import { useCookies } from "react-cookie";
 
 const Dashboard = () => {
-  return <div>Dashboard</div>;
+  const [, , removeCookie] = useCookies(["@CRM:token", "@CRM:user"]);
+
+  return (
+    <button
+      onClick={() => {
+        removeCookie("@CRM:token");
+        removeCookie("@CRM:user");
+      }}
+    >
+      Sair
+    </button>
+  );
 };
 
 export default Dashboard;

@@ -1,9 +1,14 @@
 import React from "react";
 
-const InputForm: React.FC<TInput> = (
-  { type = "text", pattern = "primary", placeholder, label, value, onChange },
-  props
-) => {
+const InputForm: React.FC<TInput> = ({
+  type = "text",
+  pattern = "primary",
+  placeholder,
+  label,
+  value,
+  onBlur,
+  ...props
+}) => {
   return (
     <div className="text-start mb-3">
       <label>{label}</label>
@@ -11,7 +16,7 @@ const InputForm: React.FC<TInput> = (
         type={type}
         value={value}
         placeholder={placeholder}
-        onChange={onChange}
+        onBlur={onBlur}
         className={`${pattern} sm:bg-white`}
         autoComplete="off"
         {...props}

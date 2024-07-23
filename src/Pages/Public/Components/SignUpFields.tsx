@@ -17,11 +17,11 @@ const SignUpFields: React.FC<TState> = ({ setState }) => {
         <MidTitle>Criar Conta</MidTitle>
       </div>
       <div className="mb-8 pt-5 sm:w-80 md:w-auto">
-        <Input label="Nome Completo" type="text" onChange={() => {}} />
-        <Input label="Email" type="email" onChange={() => {}} />
+        <Input label="Nome Completo" type="text" onBlur={() => {}} />
+        <Input label="Email" type="email" onBlur={() => {}} />
         <div className="flex justify-between items-center gap-2">
-          <Input label="Senha" type="password" onChange={() => {}} />
-          <Input label="Confirmar Senha" type="password" onChange={() => {}} />
+          <Input label="Senha" type="password" onBlur={() => {}} />
+          <Input label="Confirmar Senha" type="password" onBlur={() => {}} />
         </div>
       </div>
       <div className="flex-col-items relative">

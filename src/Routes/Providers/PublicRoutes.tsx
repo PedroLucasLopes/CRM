@@ -15,7 +15,7 @@ const PublicRoutes: React.FC = () => {
     const token = cookies["@CRM:user"];
 
     if (user && token) {
-      return navigate("/dashboard");
+      return navigate("/");
     }
 
     removeCookie;

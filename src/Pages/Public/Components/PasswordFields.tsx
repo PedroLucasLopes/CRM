@@ -17,13 +17,9 @@ const PasswordFields: React.FC<TState> = ({ setState }) => {
         <MidTitle>Recuperar Senha</MidTitle>
       </div>
       <div className="mb-8 pt-5 sm:w-80 md:w-auto">
-        <Input label="Email" type="text" onChange={() => {}} />
-        <Input label="Nova Senha" type="password" onChange={() => {}} />
-        <Input
-          label="Confirmar Nova Senha"
-          type="password"
-          onChange={() => {}}
-        />
+        <Input label="Email" type="text" onBlur={() => {}} />
+        <Input label="Nova Senha" type="password" onBlur={() => {}} />
+        <Input label="Confirmar Nova Senha" type="password" onBlur={() => {}} />
       </div>
       <Button onClick={() => {}}>Recuperar Senha</Button>
     </div>
