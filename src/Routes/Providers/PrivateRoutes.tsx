@@ -6,7 +6,7 @@ import { useCookies } from "react-cookie";
 const PrivateRoute: React.FC = () => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
-  const [cookies, removeCookie] = useCookies(["@CRM:token", "@CRM:user"]);
+  const [cookies] = useCookies(["@CRM:token", "@CRM:user"]);
 
   const [validated, setValidated] = useState(false);
 
@@ -15,12 +15,11 @@ const PrivateRoute: React.FC = () => {
     const token = cookies["@CRM:user"];
 
     if (!user || !token) {
-      removeCookie;
       navigate("/login");
     }
 
     setValidated(true);
-  }, [cookies, navigate, removeCookie]);
+  }, [cookies, navigate]);
 
   useEffect(() => {
     onPrivateNavigate();

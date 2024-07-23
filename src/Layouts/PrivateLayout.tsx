@@ -7,7 +7,7 @@ interface IProps {
 
 const PrivateTemplate: React.FC<IProps> = ({ children }) => {
   return (
-    <div>
+    <div className="w-full h-screen flex">
       <Navbar />
       {children}
     </div>

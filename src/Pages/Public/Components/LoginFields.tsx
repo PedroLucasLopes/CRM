@@ -44,10 +44,8 @@ const LoginFields: React.FC<TState> = ({ setState }) => {
         </div>
         <Button
           onClick={() => {
-            if (login.username && login.password) {
-              setCookies("@CRM:user", login);
-              setCookies("@CRM:token", login);
-            }
+            setCookies("@CRM:user", login);
+            setCookies("@CRM:token", login);
           }}
         >
           Entrar
