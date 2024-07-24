@@ -39,6 +39,12 @@
   .mid-opaticy-menu-button:hover {
     @apply md:transition-all md:text-midorange md:opacity-100
   }
+  .opacity-icon-select-hover {
+    @apply sm:w-5 sm:h-5 md:w-8 md:h-8 md:opacity-50
+  }
+  .opacity-icon-select-hover:hover {
+    @apply md:opacity-100 transition-all cursor-pointer
+  }
 }
 
 @keyframes changeOpacity {

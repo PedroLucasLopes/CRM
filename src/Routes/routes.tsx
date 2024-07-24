@@ -5,9 +5,10 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Login from "../Pages/Public/Login";
-import Dashboard from "../Pages/Private/Dashboard";
+import Dashboard from "../Pages/Private/Dashboard/Dashboard";
 import PublicRoutes from "./Providers/PublicRoutes";
 import PrivateRoutes from "./Providers/PrivateRoutes";
+import Management from "../Pages/Private/Management/Management";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       </Route>
       <Route element={<PrivateRoutes />}>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/management" element={<Management />} />
       </Route>
     </>
   )
