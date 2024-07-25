@@ -5,6 +5,8 @@ export default {
     extend: {
       width: {
         128: "80rem",
+        "xl-fit-container": "calc(100vw - 18rem)",
+        "md-fit-container": "calc(100vw - 13rem)",
       },
       height: {
         128: "35.55rem",
@@ -21,6 +23,7 @@ export default {
       backgroundColor: {
         offwhite: "#F5F5F5",
         blanchedalmond: "#ffebcd",
+        midorange: "#DB4A2B",
       },
       animation: {
         changeOpacity: "changeOpacity .5s ease-in-out",

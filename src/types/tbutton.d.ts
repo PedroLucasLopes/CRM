@@ -1,5 +1,7 @@
 interface IButtonProps {
   children: TChildren;
-  onClick: () => void;
+  pattern?: "primary-button" | "secondary-button";
   type?: "button" | "reset" | "submit";
+  style?: string;
+  onClick: () => void;
 }

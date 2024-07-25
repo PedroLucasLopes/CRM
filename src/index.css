@@ -30,6 +30,51 @@
   .primary:focus {
     @apply outline-0 border-2 border-midorange
   }
+
+  .primary-button, .secondary-button {
+    @apply font-bold py-2 px-4 rounded transition-all duration-300 ease-in-out mt-3 w-auto h-auto
+  }
+
+  .secondary-button {
+    @apply w-screen h-20 shadow-md
+  }
+
+  .primary-button{
+    @apply bg-midorange text-white
+  }
+
+  .secondary-button {
+    @apply bg-white text-gray-900
+  }
+
+  .primary-button:hover {
+    @apply bg-[#c74326]
+  }
+
+  .secondary-button:hover {
+    @apply bg-slate-300
+  }
+
+  .primary-button:focus, .secondary-button:focus {
+    @apply outline-none ring-2 ring-offset-2
+  }
+
+  .primary-button:focus {
+    @apply ring-[#DB4A2B]
+  }
+
+  .secondary-button:focus {
+    @apply bg-slate-400
+  }
+
+  .primary-button:active {
+    @apply bg-[#b23b21]
+  }
+
+  .secondary-button:active {
+    @apply bg-slate-500
+  }
+
   .flex-col-items {
     @apply flex flex-col items-center
   }
