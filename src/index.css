@@ -78,17 +78,25 @@
   .flex-col-items {
     @apply flex flex-col items-center
   }
+
   .mid-opaticy-menu-button {
     @apply sm:opacity-100 md:opacity-60 sm:text-midorange md:text-zinc-900
   }
+
   .mid-opaticy-menu-button:hover {
     @apply md:transition-all md:text-midorange md:opacity-100
   }
+
   .opacity-icon-select-hover {
     @apply sm:w-5 sm:h-5 md:w-8 md:h-8 md:opacity-50
   }
+
   .opacity-icon-select-hover:hover {
     @apply md:opacity-100 transition-all cursor-pointer
+  }
+
+  .icon-management {
+    @apply w-4 h-4 mr-2
   }
 }
 
@@ -124,6 +132,16 @@
   from {
     opacity: 0;
     transform: translate3d(0, 150px, 0)
+  } to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes moveContainerDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0)
   } to {
     opacity: 1;
     transform: translate3d(0, 0, 0);

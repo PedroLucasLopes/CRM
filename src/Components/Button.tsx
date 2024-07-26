@@ -4,10 +4,11 @@ const Button: React.FC<IButtonProps> = ({
   children,
   type = "button",
   pattern = "primary-button",
+  style,
   onClick,
 }) => {
   return (
-    <button type={type} onClick={onClick} className={pattern}>
+    <button type={type} onClick={onClick} className={`${pattern} ${style}`}>
       {children}
     </button>
   );
