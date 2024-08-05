@@ -10,6 +10,7 @@ export default {
       },
       height: {
         128: "35.55rem",
+        "xl-fit-container": "calc(100% - 7.5rem)",
       },
       borderColor: {
         midorange: "#DB4A2B",

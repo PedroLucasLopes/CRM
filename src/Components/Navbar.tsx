@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,6 +12,9 @@ import usePathEmphasis from "../hooks/usePathEmphasis";
 const Navbar = () => {
   const [, , removeCookie] = useCookies(["@CRM:token", "@CRM:user"]);
   const navigate = useNavigate();
+  const location = useLocation();
+  const regex: RegExp = /(\/management\/)([a-z]*)/gm;
+  const match = regex.exec(location.pathname);
 
   return (
     <>
@@ -21,15 +24,16 @@ const Navbar = () => {
           <button onClick={() => navigate("/")}>
             <FontAwesomeIcon
               icon={faHouse}
-              className={`opacity-icon-select-hover ${usePathEmphasis("/")}`}
+              className={usePathEmphasis("/", "opacity-icon-select-hover")}
             />
           </button>
-          <button onClick={() => navigate("/management")}>
+          <button onClick={() => navigate("/management/timeline")}>
             <FontAwesomeIcon
               icon={faMagnifyingGlassChart}
-              className={`opacity-icon-select-hover ${usePathEmphasis(
-                "/management"
-              )}`}
+              className={usePathEmphasis(
+                `/management/${match && match[2]}`,
+                "opacity-icon-select-hover"
+              )}
             />
           </button>
         </div>

@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Header from "./Components/Header";
 
 const Management = () => {
@@ -5,6 +6,7 @@ const Management = () => {
     <>
       <div className="md:w-md-fit-container xl:w-xl-fit-container pr-4 pl-4">
         <Header />
+        <Outlet />
       </div>
     </>
   );

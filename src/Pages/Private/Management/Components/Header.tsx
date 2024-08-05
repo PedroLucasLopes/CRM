@@ -6,38 +6,61 @@ import {
   faTableColumns,
   faTableList,
 } from "@fortawesome/free-solid-svg-icons";
+import usePathEmphasis from "../../../../hooks/usePathEmphasis";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex justify-center items-center gap-4">
       <Button
-        onClick={() => {}}
+        onClick={() => {
+          navigate("/management/timeline");
+        }}
         pattern="secondary-button"
-        style="animate-moveContainerDown"
+        style={usePathEmphasis(
+          "/management/timeline",
+          "animate-moveContainerDown"
+        )}
       >
         <FontAwesomeIcon icon={faTableList} className="icon-management" />
         Linha do tempo
       </Button>
       <Button
-        onClick={() => {}}
+        onClick={() => {
+          navigate("/management/panel");
+        }}
         pattern="secondary-button"
-        style="animate-moveContainerDown100"
+        style={usePathEmphasis(
+          "/management/panel",
+          "animate-moveContainerDown"
+        )}
       >
         <FontAwesomeIcon icon={faTableColumns} className="icon-management" />
         Painel
       </Button>
       <Button
-        onClick={() => {}}
+        onClick={() => {
+          navigate("/management/backlog");
+        }}
         pattern="secondary-button"
-        style="animate-moveContainerDown200"
+        style={usePathEmphasis(
+          "/management/backlog",
+          "animate-moveContainerDown"
+        )}
       >
         <FontAwesomeIcon icon={faBook} className="icon-management" />
         Backlog
       </Button>
       <Button
-        onClick={() => {}}
+        onClick={() => {
+          navigate("/management/items");
+        }}
         pattern="secondary-button"
-        style="animate-moveContainerDown300"
+        style={usePathEmphasis(
+          "/management/items",
+          "animate-moveContainerDown"
+        )}
       >
         <FontAwesomeIcon icon={faAward} className="icon-management" />
         Itens

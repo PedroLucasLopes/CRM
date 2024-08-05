@@ -63,10 +63,6 @@
     @apply ring-[#DB4A2B]
   }
 
-  .secondary-button:focus {
-    @apply bg-slate-400
-  }
-
   .primary-button:active {
     @apply bg-[#b23b21]
   }
