@@ -9,6 +9,7 @@ export default {
         "md-fit-container": "calc(100vw - 13rem)",
       },
       height: {
+        0.01: "1px",
         128: "35.55rem",
         "xl-fit-container": "calc(100% - 7.5rem)",
       },

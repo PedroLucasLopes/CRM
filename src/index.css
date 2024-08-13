@@ -48,11 +48,11 @@
   }
 
   .primary-button:hover {
-    @apply bg-[#c74326]
+    @apply bg-[#c74326] opacity-100
   }
 
   .secondary-button:hover {
-    @apply bg-slate-300
+    @apply bg-white opacity-100
   }
 
   .primary-button:focus, .secondary-button:focus {
@@ -68,7 +68,7 @@
   }
 
   .secondary-button:active {
-    @apply bg-slate-500
+    @apply bg-offwhite
   }
 
   .flex-col-items {
