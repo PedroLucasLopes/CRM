@@ -32,7 +32,7 @@
   }
 
   .primary-button, .secondary-button {
-    @apply font-bold py-2 px-4 rounded transition-all duration-300 ease-in-out mt-3 w-auto h-auto
+    @apply font-bold py-2 px-4 rounded transition-all duration-300 ease-in-out w-auto h-auto
   }
 
   .secondary-button {
@@ -56,11 +56,7 @@
   }
 
   .primary-button:focus, .secondary-button:focus {
-    @apply outline-none ring-2 ring-offset-2
-  }
-
-  .primary-button:focus {
-    @apply ring-[#DB4A2B]
+    @apply ring-[#DB4A2B] outline-none ring-2 ring-offset-2
   }
 
   .primary-button:active {

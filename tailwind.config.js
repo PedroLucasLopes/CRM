@@ -12,6 +12,7 @@ export default {
         0.01: "1px",
         128: "35.55rem",
         "xl-fit-container": "calc(100% - 7.5rem)",
+        "xl-fit-column": "calc(100% - 2.5rem)",
       },
       borderColor: {
         midorange: "#DB4A2B",

@@ -10,7 +10,7 @@ import PublicRoutes from "./Providers/PublicRoutes";
 import PrivateRoutes from "./Providers/PrivateRoutes";
 import Management from "../Pages/Private/Management/Management";
 import TimeLine from "../Pages/Private/Management/Pages/TimeLine";
-import Panel from "../Pages/Private/Management/Pages/Panel";
+import Panel from "../Pages/Private/Management/Pages/Panel/Panel";
 import Backlog from "../Pages/Private/Management/Pages/Backlog";
 import Items from "../Pages/Private/Management/Pages/Items";
 
