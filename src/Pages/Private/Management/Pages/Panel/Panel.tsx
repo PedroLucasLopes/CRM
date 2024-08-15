@@ -20,7 +20,7 @@ const Panel = () => {
         </div>
         <Divider />
       </div>
-      <Kanban title="A Fazer" sprint="Semana 1" />
+      <Kanban />
     </Container>
   );
 };
