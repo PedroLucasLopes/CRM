@@ -12,6 +12,7 @@ export default {
       height: {
         0.01: "1px",
         128: "35.55rem",
+        "fit-container": "calc(100vh - 8rem)",
         "sm-fit-container": "calc(100% - 20rem)",
         "md-fit-container": "calc(100% - 18rem)",
         "xl-fit-container": "calc(100% - 12rem)",

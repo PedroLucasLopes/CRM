@@ -9,7 +9,7 @@ import useDisclosure from "../../../../../hooks/useDisclosure";
 import Modal from "../../../../../Components/Modal";
 
 const Panel = () => {
-  const { onOpen, isOpen } = useDisclosure();
+  const { onOpen, isOpen, onClose } = useDisclosure();
   return (
     <>
       <Container>
@@ -25,7 +25,9 @@ const Panel = () => {
         </div>
         <Kanban />
       </Container>
-      <Modal isOpen={isOpen}>Oi</Modal>
+      <Modal isOpen={isOpen} onClose={onClose} onOpen={onOpen}>
+        Oi
+      </Modal>
     </>
   );
 };

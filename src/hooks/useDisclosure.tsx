@@ -7,7 +7,11 @@ const useDisclosure = () => {
     setIsOpen((prev) => !prev);
   }, []);
 
-  return { onOpen, isOpen };
+  const onClose = useCallback(() => {
+    setIsOpen(false);
+  }, []);
+
+  return { onOpen, onClose, isOpen };
 };
 
 export default useDisclosure;

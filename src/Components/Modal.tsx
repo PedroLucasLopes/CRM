@@ -1,32 +1,43 @@
-import React, { useState, useEffect } from "react";
+import { faX } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useEffect } from "react";
 
 interface IProps {
   children: React.ReactNode;
   isOpen: boolean;
+  onOpen: () => void;
+  onClose: () => void;
   size?: string;
 }
 
-const Modal: React.FC<IProps> = ({ children, isOpen, size = "md" }) => {
-  const [open, setOpen] = useState<boolean>(isOpen);
-
+const Modal: React.FC<IProps> = ({
+  children,
+  isOpen,
+  onOpen,
+  onClose,
+  size = "md",
+}) => {
   useEffect(() => {
-    setOpen(isOpen);
-  }, [isOpen]);
-
-  const handleClose = () => {
-    setOpen(!isOpen);
-  };
+    onOpen;
+    onClose;
+  }, [isOpen, onClose, onOpen]);
 
   return (
-    open && (
+    isOpen && (
       <div
         className="bg-neutral-700 bg-opacity-30 w-screen h-screen absolute top-0 left-0 flex justify-center items-center"
-        onClick={handleClose}
+        onClick={onClose}
       >
         <div
-          className={`${size} bg-white z-50 animate-moveContainerDown`}
+          className={`${size} bg-white z-50 animate-moveContainerDown relative`}
           onClick={(e) => e.stopPropagation()}
         >
+          <button
+            onClick={onClose}
+            className="opacity-30 transition-all hover:opacity-100 absolute right-7 top-4"
+          >
+            <FontAwesomeIcon icon={faX} />
+          </button>
           {children}
         </div>
       </div>
