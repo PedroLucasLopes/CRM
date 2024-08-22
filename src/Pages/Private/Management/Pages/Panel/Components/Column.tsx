@@ -23,7 +23,7 @@ const Column: React.FC<IProps> = ({ title, tasks }) => {
       </div>
       {tasks &&
         tasks.map((task) => {
-          return <Task task={task} />;
+          return <Task task={task} key={task.id} />;
         })}
       <button className="opacity-80 hover:shadow-md hover:opacity-100 transition-all p-2 w-full">
         <FontAwesomeIcon icon={faPlus} className="mr-1" /> Criar Item

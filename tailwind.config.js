@@ -5,13 +5,16 @@ export default {
     extend: {
       width: {
         128: "80rem",
-        "xl-fit-container": "calc(100vw - 18rem)",
-        "md-fit-container": "calc(100vw - 13rem)",
+        "sm-fit-container": "calc(100vw - 60rem)",
+        "md-fit-container": "calc(100vw - 40rem)",
+        "xl-fit-container": "calc(100vw - 20rem)",
       },
       height: {
         0.01: "1px",
         128: "35.55rem",
-        "xl-fit-container": "calc(100% - 7.5rem)",
+        "sm-fit-container": "calc(100% - 20rem)",
+        "md-fit-container": "calc(100% - 18rem)",
+        "xl-fit-container": "calc(100% - 12rem)",
         "xl-fit-column": "calc(100% - 2.5rem)",
       },
       borderColor: {

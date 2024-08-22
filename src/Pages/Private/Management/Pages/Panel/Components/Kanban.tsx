@@ -66,7 +66,7 @@ const Kanban = () => {
             title: string;
             tasks: { name: string; tags: string[]; id: string }[] | null;
           }) => {
-            return <Column title={title} tasks={tasks} />;
+            return <Column title={title} tasks={tasks} key={title} />;
           }
         )}
     </div>

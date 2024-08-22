@@ -90,6 +90,18 @@
   .icon-management {
     @apply w-4 h-4 mr-2
   }
+
+  .sm {
+    @apply w-sm-fit-container h-sm-fit-container rounded-lg p-6
+  }
+
+  .md {
+    @apply w-md-fit-container h-md-fit-container rounded-lg p-6
+  }
+
+  .lg {
+    @apply w-xl-fit-container h-xl-fit-container rounded-lg p-6
+  }
 }
 
 @keyframes changeOpacity {
