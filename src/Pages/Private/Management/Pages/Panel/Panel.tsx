@@ -9,7 +9,7 @@ import useDisclosure from "../../../../../hooks/useDisclosure";
 import Modal from "../../../../../Components/Modal";
 
 const Panel = () => {
-  const { onOpen, isOpen, onClose } = useDisclosure();
+  const { onOpen, onClose, isOpen } = useDisclosure();
   return (
     <>
       <Container>

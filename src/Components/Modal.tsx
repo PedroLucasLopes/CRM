@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect } from "react";
 
 interface IProps {
-  children: React.ReactNode;
+  children: TChildren;
   isOpen: boolean;
+  size?: string;
   onOpen: () => void;
   onClose: () => void;
-  size?: string;
 }
 
 const Modal: React.FC<IProps> = ({
