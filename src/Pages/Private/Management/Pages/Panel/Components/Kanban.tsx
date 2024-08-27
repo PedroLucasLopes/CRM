@@ -56,7 +56,7 @@ const Kanban = () => {
   ];
   const [columns] = useState(defaultColumns);
   return (
-    <div className="flex justify-start items-center h-xl-fit-column gap-5">
+    <div className="flex justify-start items-center h-xl-fit-column gap-5 sm:overflow-x-scroll md:overflow-auto">
       {columns &&
         columns.map(
           ({

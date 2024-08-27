@@ -15,7 +15,7 @@ const Modal: React.FC<IProps> = ({
   isOpen,
   onOpen,
   onClose,
-  size = "md",
+  size = "sm",
 }) => {
   useEffect(() => {
     onOpen;

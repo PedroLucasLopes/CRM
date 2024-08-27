@@ -23,7 +23,10 @@ const Header = () => {
           "animate-moveContainerDown"
         )}
       >
-        <FontAwesomeIcon icon={faTableList} className="icon-management" />
+        <FontAwesomeIcon
+          icon={faTableList}
+          className="icon-management sm:hidden md:inline-block"
+        />
         Linha do tempo
       </Button>
       <Button
@@ -36,7 +39,10 @@ const Header = () => {
           "animate-moveContainerDown"
         )}
       >
-        <FontAwesomeIcon icon={faTableColumns} className="icon-management" />
+        <FontAwesomeIcon
+          icon={faTableColumns}
+          className="icon-management sm:hidden md:inline-block"
+        />
         Painel
       </Button>
       <Button
@@ -49,7 +55,10 @@ const Header = () => {
           "animate-moveContainerDown"
         )}
       >
-        <FontAwesomeIcon icon={faBook} className="icon-management" />
+        <FontAwesomeIcon
+          icon={faBook}
+          className="icon-management sm:hidden md:inline-block"
+        />
         Backlog
       </Button>
       <Button
@@ -62,7 +71,10 @@ const Header = () => {
           "animate-moveContainerDown"
         )}
       >
-        <FontAwesomeIcon icon={faAward} className="icon-management" />
+        <FontAwesomeIcon
+          icon={faAward}
+          className="icon-management sm:hidden md:inline-block"
+        />
         Itens
       </Button>
     </div>

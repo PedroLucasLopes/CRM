@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="ml-0 md:w-52 xl:w-72 flex flex-col items-center justify-center gap-y-20 bg-white shadow-lg animate-moveContainerLeft">
+      <div className="ml-0 md:w-52 lg:w-72 md:flex md:flex-col md:items-center md:justify-center gap-y-20 bg-white shadow-lg animate-moveContainerLeft sm:hidden">
         <Logo />
         <div className="flex flex-col items-center justify-center gap-6">
           <button onClick={() => navigate("/")}>

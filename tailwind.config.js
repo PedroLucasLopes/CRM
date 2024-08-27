@@ -5,9 +5,9 @@ export default {
     extend: {
       width: {
         128: "80rem",
-        "sm-fit-container": "calc(100vw - 60rem)",
-        "md-fit-container": "calc(100vw - 40rem)",
-        "xl-fit-container": "calc(100vw - 20rem)",
+        "sm-fit-container": "calc(100vw - 40%)",
+        "md-fit-container": "calc(100vw - 20%)",
+        "xl-fit-container": "calc(100vw - 5%)",
       },
       height: {
         0.01: "1px",
